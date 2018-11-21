@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-11-01" view-index="0" gantt-divider-location="365" resource-divider-location="300" version="2.8.9" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-11-09" view-index="0" gantt-divider-location="433" resource-divider-location="451" version="2.8.9" locale="it">
     <description/>
     <view zooming-state="default:3" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="204" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="79" order="1"/>
-        <field id="tpd5" name="Data di fine" width="78" order="2"/>
+        <field id="tpd3" name="Nome" width="226" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="102" order="1"/>
+        <field id="tpd5" name="Data di fine" width="101" order="2"/>
         <option id="color.recent"><![CDATA[#000000]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nome" width="210" order="0"/>
-        <field id="1" name="Ruolo predefinito" width="86" order="1"/>
+        <field id="0" name="Nome" width="286" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="161" order="1"/>
     </view>
     <!-- -->
     <calendars base-id="nessuno">
@@ -51,7 +51,6 @@
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
         <task id="0" name="Sistema didattico per Arduino" meeting="false" start="2018-11-14" duration="18" complete="0" expand="true">
-            <task id="17" name="Stesura documentazione" meeting="false" start="2018-11-21" duration="16" complete="0" expand="true"/>
             <task id="1" name="Stesura del Gantt" meeting="false" start="2018-11-14" duration="2" complete="0" expand="true">
                 <depend id="3" type="2" difference="0" hardness="Strong"/>
             </task>
@@ -62,11 +61,30 @@
                 <task id="8" name="Analisi dei costi" meeting="false" start="2018-11-23" duration="1" complete="0" expand="true"/>
             </task>
             <task id="11" name="Progettazione" color="#000000" meeting="false" start="2018-11-28" duration="2" complete="0" thirdDate="2018-11-28" thirdDate-constraint="0" expand="true">
-                <task id="12" name="Design dell'architettura del sistema" meeting="false" start="2018-11-28" duration="2" complete="0" expand="true"/>
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+                <task id="12" name="Design dell'architettura del sistema" meeting="false" start="2018-11-28" duration="1" complete="0" expand="true"/>
+                <task id="18" name="Design procedurale" meeting="false" start="2018-11-30" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="21" name="Implementazione" color="#000000" meeting="false" start="2018-12-05" duration="3" complete="0" thirdDate="2018-12-05" thirdDate-constraint="0" expand="true">
+                <task id="25" name="Saldatura pin femmina" meeting="false" start="2018-12-05" duration="1" complete="0" expand="true"/>
+                <task id="29" name="Saldatura del circuito" meeting="false" start="2018-12-07" duration="1" complete="0" expand="true"/>
+                <task id="27" name="Sviluppo librerie" meeting="false" start="2018-12-12" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="24" name="Protocolli di test" meeting="false" start="2018-12-05" duration="12" complete="0" expand="true"/>
+            <task id="17" name="Documentazione" meeting="false" start="2018-11-21" duration="16" complete="0" expand="true">
+                <task id="32" name="Stesura documentazione" meeting="false" start="2018-11-21" duration="16" complete="0" expand="true"/>
+                <task id="33" name="Stesura manuale utilizzo" meeting="false" start="2018-11-21" duration="16" complete="0" expand="true"/>
             </task>
         </task>
     </tasks>
-    <resources/>
+    <resources>
+        <resource id="0" name="Carlo Pezzotti" function="Default:1" contacts="" phone="">
+            <rate name="standard" value="62"/>
+        </resource>
+        <resource id="1" name="Paolo Weishaupt" function="Default:1" contacts="" phone="">
+            <rate name="standard" value="62"/>
+        </resource>
+    </resources>
     <allocations/>
     <vacations/>
     <previous/>
