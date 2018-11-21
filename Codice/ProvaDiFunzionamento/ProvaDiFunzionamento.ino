@@ -10,10 +10,9 @@ void setup() {
   DigiKeyboard.sendKeyStroke(0);
   DigiKeyboard.sendKeyStroke(0, MOD_GUI_LEFT);
   DigiKeyboard.delay(100);
-  DigiKeyboard.println("blocco note");
+  DigiKeyboard.println("cmd");
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.println("prova");
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
 }
