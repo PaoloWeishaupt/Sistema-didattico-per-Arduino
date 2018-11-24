@@ -1,15 +1,12 @@
-
 void setup()
 {
-  pinMode(0,OUTPUT);
+  pinMode(3,OUTPUT);
 }
 
 
 void loop()
 {
-  if(getButtonState(5) == HIGH){
-    digitalWrite(0,HIGH);
-  }
+  digitalWrite(3,getButtonState(5));
 }
 
 boolean getButtonState(int pin){
