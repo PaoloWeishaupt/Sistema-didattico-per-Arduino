@@ -9,13 +9,13 @@ void setup()
 
 void loop()
 {
-  if(getButtonState(52)){
+  if(getButtonState(1)){
     r++;
   }
-  if(getButtonState(50)){
+  if(getButtonState(2)){
     g++;
   }
-  if(getButtonState(48)){
+  if(getButtonState(4)){
     b++;
   }
   accendiLed(r,g,b,2,3,4);
