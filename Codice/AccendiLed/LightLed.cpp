@@ -1,8 +1,7 @@
 /**
- @author Carlo Pezzotti
  @author Paolo Weishaupt
  @last modified Paolo Weishaupt
- @version 2018.12.07
+ @version 2018.12.09
 */
 
 // Include this library's description file.
@@ -25,8 +24,11 @@ LightLed::LightLed(int pinRed, int pinGreen, int pinBlue)
 }
 
 /**
- Metodo che ritorna lo stato del bottone.
- @return 1 se premuto sennò 0.
+ Metodo che accende i led del LedRGB tutti assieme in base al valore passato
+ come parametro.
+ @param r Valore del pin rosso.
+ @param g Valore del pin verde.
+ @param b Valore del pin blu.
 */
 void lightLed(int r, int g, int b){
   analogWrite(_pinGreen, 255 - g);
