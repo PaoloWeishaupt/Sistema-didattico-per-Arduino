@@ -14,11 +14,11 @@ class Button
   // User-accessible "public" interface
   public:
     ButtonState(int);
-    bool getButtonState(int);
+    bool getButtonState();
 
   // Library-accessible "private" interface
   private:
-    int pin;
+    int _pin;
 };
 
 #endif
