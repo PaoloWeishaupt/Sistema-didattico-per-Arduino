@@ -16,8 +16,7 @@ class LightLed
     LightLed(int, int, int);
     void lightLed(int, int, int);
 
-  // Library-accessible "private" interface
-  private:
+  public:
     int _pinRed;
     int _pinGreen;
     int _pinBlue;
