@@ -17,9 +17,9 @@
 
 LightLed::LightLed(int pinRed, int pinGreen, int pinBlue)
 {
-	pinMode(pinRed,INPUT);
-  pinMode(pinGreen,INPUT);
-  pinMode(pinBlue,INPUT);
+	pinMode(pinRed,OUTPUT);
+  pinMode(pinGreen,OUTPUT);
+  pinMode(pinBlue,OUTPUT);
 	_pinRed = pinRed;
 	_pinGreen = pinGreen;
 	_pinBlue = pinBlue;

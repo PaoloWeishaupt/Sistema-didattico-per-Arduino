@@ -1,4 +1,10 @@
-boolean ottieniStatoBottone(int pin){
-  pinMode(pin,INPUT);
-  return digitalRead(pin);
+#include "ButtonState.h"
+
+ButtonState* button;
+void setup(){
+  button = new ButtonState(0);
 }
+
+void loop(){
+}
+

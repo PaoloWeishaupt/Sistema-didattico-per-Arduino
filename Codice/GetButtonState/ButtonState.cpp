@@ -1,12 +1,14 @@
 /**
  @author Carlo Pezzotti
  @author Paolo Weishaupt
- @last modified Paolo Weishaupt
- @version 2018.12.07
+ @last modified Carlo Pezzotti
+ @version 2018.12.12
 */
 
 // Include this library's description file.
-#include "Button.h"
+
+#include "ButtonState.h"
+#import <Arduino.h>
 
 /**
  Costruttore personalizzato.
@@ -22,6 +24,6 @@ ButtonState::ButtonState(int pin)
  Metodo che ritorna lo stato del bottone.
  @return 1 se premuto sennò 0.
 */
-void getButtonState(){
-	digitalWrite(pin,HIGH);
+bool ButtonState::getStateButton(){
+	return digitalRead(_pin);
 }

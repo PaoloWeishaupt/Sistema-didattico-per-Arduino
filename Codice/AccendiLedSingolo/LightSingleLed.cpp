@@ -16,7 +16,7 @@
 */
 LightSingleLed::LightSingleLed(int pin)
 {
-	pinMode(pin,INPUT);
+	pinMode(pin, OUTPUT);
 	_pin = pin;
 }
 

@@ -1,23 +1,24 @@
 /**
  @author Paolo Weishaupt
- @last modified Paolo Weishaupt
- @version 2018.12.07
+ @author Carlo PEzzotti
+ @last modified Carlo Pezzotti
+ @version 2018.12.12
 */
 
 // Ensure this library description is only included once
-#ifndef Button_h
-#define Button_h
+#ifndef ButtonState_h
+#define ButtonState_h
 
 // Library interface description
-class Button
+class ButtonState
 {
   // User-accessible "public" interface
   public:
     ButtonState(int);
-    bool getButtonState();
+    bool getStateButton();
 
   // Library-accessible "private" interface
-  private:
+  public:
     int _pin;
 };
 
