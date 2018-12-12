@@ -22,6 +22,6 @@ ButtonState::ButtonState(int pin)
  Metodo che ritorna lo stato del bottone.
  @return 1 se premuto sennò 0.
 */
-bool getButtonState(){
-  return digitalRead(_pin);
+void getButtonState(){
+	digitalWrite(pin,HIGH);
 }
