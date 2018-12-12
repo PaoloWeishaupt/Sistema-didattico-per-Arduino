@@ -1,7 +1,7 @@
 /**
  @author Paolo Weishaupt,Carlo Pezzotti
- @last modified Paolo Weishaupt
- @version 2018.12.09
+ @last modified Carlo Pezzotti
+ @version 2018.12.12
 */
 
 // Include this library's description file.
@@ -14,18 +14,15 @@
  @param pinGreen Pin del led verde.
  #param pinBlue Pin del led blu.
 */
-int pinRed = 0;
-int pinGreen = 0;
-int pinBlue = 0;
 
 LightLed::LightLed(int pinRed, int pinGreen, int pinBlue)
 {
 	pinMode(pinRed,INPUT);
   pinMode(pinGreen,INPUT);
   pinMode(pinBlue,INPUT);
-	pinRed = pinRed;
-	pinGreen = pinGreen;
-	pinBlue = pinBlue;
+	_pinRed = pinRed;
+	_pinGreen = pinGreen;
+	_pinBlue = pinBlue;
 }
 
 /**
@@ -35,8 +32,8 @@ LightLed::LightLed(int pinRed, int pinGreen, int pinBlue)
  @param g Valore del pin verde.
  @param b Valore del pin blu.
 */
-void lightLed(int r, int g, int b){
-  analogWrite(pinGreen, 255 - g);
-  analogWrite(pinRed, 255 - r);
-  analogWrite(pinBlue, 255 - b);
+void LightLed::lightLed(int r, int g, int b){
+  analogWrite(_pinGreen, 255 - g);
+  analogWrite(_pinRed, 255 - r);
+  analogWrite(_pinBlue, 255 - b);
 }
