@@ -9,20 +9,19 @@
 #include "Button.h"
 
 /**
-* Costruttore personalizzato.
-* @param pin Pin del bottone utilizzato.
+ Costruttore personalizzato.
+ @param pin Pin del bottone utilizzato.
 */
 ButtonState::ButtonState(int pin)
 {
 	pinMode(pin,INPUT);
-	pin = pin;
+	_pin = pin;
 }
 
 /**
-* Metodo che ritorna lo stato del bottone.
-* @return 1 se premuto sennò 0.
+ Metodo che ritorna lo stato del bottone.
+ @return 1 se premuto sennò 0.
 */
-bool getButtonState(int pin){
-  pinMode(pin,INPUT);
-  return digitalRead(pin);
+bool getButtonState(){
+  return digitalRead(_pin);
 }

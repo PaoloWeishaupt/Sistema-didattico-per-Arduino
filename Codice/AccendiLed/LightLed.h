@@ -5,20 +5,22 @@
 */
 
 // Ensure this library description is only included once
-#ifndef Button_h
-#define Button_h
+#ifndef LightLed_h
+#define LightLed_h
 
 // Library interface description
-class Button
+class LightLed
 {
   // User-accessible "public" interface
   public:
-    ButtonState(int);
-    bool getButtonState();
+    LightLed(int, int, int);
+    void lightLed(int, int, int);
 
   // Library-accessible "private" interface
   private:
-    int _pin;
+    int _pinRed;
+    int _pinGreen;
+    int _pinBlue;
 };
 
 #endif
