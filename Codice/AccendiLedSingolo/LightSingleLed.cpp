@@ -21,6 +21,6 @@ LightSingleLed::LightSingleLed(int pin)
  Metodo che accende un led.
  @param pin Pin da accendere.
 */
-bool lightSingleLed(int pin){
-  return digitalRead(_pin);
+void lightSingleLed(){
+  digitalWrite(_pin,HIGH);
 }
