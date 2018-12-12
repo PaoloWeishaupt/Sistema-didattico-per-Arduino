@@ -8,6 +8,9 @@
 #ifndef LightSingleLed_h
 #define LightSingleLed_h
 
+// Gives you access to the standard types and constants of the Arduino language
+#include "Arduino.h"
+
 // Library interface description
 class LightSingleLed
 {
