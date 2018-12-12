@@ -1,11 +1,12 @@
 /**
- @author Paolo Weishaupt
+ @author Paolo Weishaupt,Carlo Pezzotti
  @last modified Paolo Weishaupt
  @version 2018.12.09
 */
 
 // Include this library's description file.
 #include "LightLed.h"
+#import <Arduino.h>
 
 /**
  Costruttore personalizzato.
@@ -13,14 +14,18 @@
  @param pinGreen Pin del led verde.
  #param pinBlue Pin del led blu.
 */
+int pinRed = 0;
+int pinGreen = 0;
+int pinBlue = 0;
+
 LightLed::LightLed(int pinRed, int pinGreen, int pinBlue)
 {
 	pinMode(pinRed,INPUT);
   pinMode(pinGreen,INPUT);
   pinMode(pinBlue,INPUT);
-	_pinRed = pinRed;
-	_pinGreen = pinGreen;
-	_pinBlue = pinBlue;
+	pinRed = pinRed;
+	pinGreen = pinGreen;
+	pinBlue = pinBlue;
 }
 
 /**
@@ -31,7 +36,7 @@ LightLed::LightLed(int pinRed, int pinGreen, int pinBlue)
  @param b Valore del pin blu.
 */
 void lightLed(int r, int g, int b){
-  analogWrite(_pinGreen, 255 - g);
-  analogWrite(_pinRed, 255 - r);
-  analogWrite(_pinBlue, 255 - b);
+  analogWrite(pinGreen, 255 - g);
+  analogWrite(pinRed, 255 - r);
+  analogWrite(pinBlue, 255 - b);
 }
