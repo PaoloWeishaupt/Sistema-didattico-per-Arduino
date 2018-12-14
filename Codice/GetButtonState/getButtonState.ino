@@ -6,5 +6,8 @@ void setup(){
 }
 
 void loop(){
+  if(button->getStateButton()){
+    //code
+  }
 }
 

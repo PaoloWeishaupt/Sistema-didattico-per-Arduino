@@ -1,6 +1,6 @@
 /**
  @author Paolo Weishaupt
- @last modified Paolo Weishaupt
+ @last modified Carlo Pezzotti
  @version 2018.12.12
 */
 
@@ -22,8 +22,13 @@ LightSingleLed::LightSingleLed(int pin)
 
 /**
  Metodo che accende un led.
- @param pin Pin da accendere.
 */
 void LightSingleLed::lightSingleLed(){
   digitalWrite(_pin,HIGH);
+}
+/**
+ Metodo che spegn un led
+*/
+void LightSingleLed::turnOffSingleLed() {
+	digitalWrite(_pin, LOW);
 }

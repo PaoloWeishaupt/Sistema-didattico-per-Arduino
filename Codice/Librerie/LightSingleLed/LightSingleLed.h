@@ -1,6 +1,6 @@
 /**
  @author Paolo Weishaupt
- @last modified Paolo Weishaupt
+ @last modified Carlo Pezzotti
  @version 2018.12.12
 */
 
@@ -17,7 +17,8 @@ class LightSingleLed
   // User-accessible "public" interface
   public:
     LightSingleLed(int);
-    void lightSingleLed(int);
+    void lightSingleLed();
+	void turnOffSingleLed();
 
   // Library-accessible "private" interface
   private:
