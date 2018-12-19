@@ -1,7 +1,7 @@
 /**
-@author Carlo Pezzotti
-@last modified Paolo Weishaupt
-@version 2018.14.12
+ @author Carlo Pezzotti
+ @last modified Paolo Weishaupt
+ @version 2018.12.19
 */
 
 // Ensure this library description is only included once
