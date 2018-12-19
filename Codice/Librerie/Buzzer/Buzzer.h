@@ -1,6 +1,6 @@
 /**
 @author Carlo Pezzotti
-@last modified Carlo Pezzotti
+@last modified Paolo Weishaupt
 @version 2018.14.12
 */
 
@@ -13,13 +13,11 @@ class Buzzer
 {
 	// User-accessible "public" interface
 public:
-	Buzzer(int);
-	void beep(int, int);
-
-public:
 	int _duration;
 	int _hertz;
-  int _pin;
+	int _pin;
+	Buzzer(int);
+	void beep(int, int);
 };
 
 #endif
