@@ -1,7 +1,7 @@
 /**
  @author Paolo Weishaupt
- @last modified Carlo Pezzotti
- @version 2018.12.12
+ @last modified Paolo Weishaupt
+ @version 2018.12.19
 */
 
 // Give the rest of the code access to the standard Arduino functions, and to
@@ -27,7 +27,7 @@ void LightSingleLed::lightSingleLed(){
   digitalWrite(_pin,HIGH);
 }
 /**
- Metodo che spegn un led
+ Metodo che spegne un led.
 */
 void LightSingleLed::turnOffSingleLed() {
 	digitalWrite(_pin, LOW);
