@@ -1,7 +1,7 @@
 /**
  @author Paolo Weishaupt
  @last modified Carlo Pezzotti
- @version 2018.12.12
+ @version 2018.12.19
 */
 
 // Ensure this library description is only included once
@@ -18,7 +18,7 @@ class LightSingleLed
   public:
     LightSingleLed(int);
     void lightSingleLed();
-	void turnOffSingleLed();
+	  void turnOffSingleLed();
 
   // Library-accessible "private" interface
   private:
