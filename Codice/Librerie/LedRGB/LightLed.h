@@ -1,7 +1,7 @@
 /**
  @author Paolo Weishaupt,Carlo Pezzotti
- @last modified Carlo Pezzotti
- @version 2018.12.12
+ @last modified Paolo Weishaupt
+ @version 2018.12.19
 */
 
 // Ensure this library description is only included once
@@ -13,13 +13,11 @@ class LightLed
 {
   // User-accessible "public" interface
   public:
-    LightLed(int, int, int);
-    void lightLed(int, int, int);
-
-  public:
     int _pinRed;
     int _pinGreen;
     int _pinBlue;
+    LightLed(int, int, int);
+    void lightLed(int, int, int);
 };
 
 #endif
