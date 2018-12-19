@@ -1,8 +1,8 @@
 /**
  @author Paolo Weishaupt
- @author Carlo PEzzotti
- @last modified Carlo Pezzotti
- @version 2018.12.12
+ @author Carlo Pezzotti
+ @last modified Paolo Weishaupt
+ @version 2018.12.19
 */
 
 // Ensure this library description is only included once
@@ -14,12 +14,9 @@ class ButtonState
 {
   // User-accessible "public" interface
   public:
+    int _pin;
     ButtonState(int);
     bool getStateButton();
-
-  // Library-accessible "private" interface
-  public:
-    int _pin;
 };
 
 #endif
