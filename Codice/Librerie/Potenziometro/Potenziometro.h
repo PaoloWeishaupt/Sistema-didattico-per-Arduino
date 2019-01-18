@@ -15,10 +15,6 @@ class Potenziometro
 public:
 	Potenziometro(int);
 	int ottieniValorePotenziometro();
-
-	// Library-accessible "private" interface
-public:
 	int _pin;
-};
-
+	
 #endif
