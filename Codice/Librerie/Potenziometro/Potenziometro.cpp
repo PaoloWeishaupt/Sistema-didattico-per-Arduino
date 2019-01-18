@@ -11,7 +11,7 @@
 
 /**
  Costruttore personalizzato.
- @param pin Pin del bottone utilizzato.
+ @param pin Pin del potenziometro utilizzato.
 */
 Potenziometro::Potenziometro(int pin)
 {
@@ -20,7 +20,7 @@ Potenziometro::Potenziometro(int pin)
 }
 
 /**
- Metodo che ritorna lo stato del bottone.
+ Metodo che ritorna il valore del potenziometro.
  @return il valore del potenziometro
 */
 bool Potenziometro::ottieniValorePotenziometro(){
