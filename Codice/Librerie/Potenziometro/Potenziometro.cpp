@@ -23,6 +23,6 @@ Potenziometro::Potenziometro(int pin)
  Metodo che ritorna il valore del potenziometro.
  @return il valore del potenziometro
 */
-bool Potenziometro::ottieniValorePotenziometro(){
+int Potenziometro::ottieniValorePotenziometro(){
 	return analogRead(_pin);
 }
