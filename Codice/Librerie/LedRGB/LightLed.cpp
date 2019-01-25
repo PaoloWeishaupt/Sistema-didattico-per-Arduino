@@ -33,7 +33,7 @@ LightLed::LightLed(int pinRed, int pinGreen, int pinBlue)
  @param b Valore del pin blu.
 */
 void LightLed::lightLed(int r, int g, int b){
-  analogWrite(_pinGreen, 255 - g);
-  analogWrite(_pinRed, 255 - r);
-  analogWrite(_pinBlue, 255 - b);
+  analogWrite(_pinGreen, g);
+  analogWrite(_pinRed, r);
+  analogWrite(_pinBlue, b);
 }
