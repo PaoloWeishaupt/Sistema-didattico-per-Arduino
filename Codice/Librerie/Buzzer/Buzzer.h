@@ -12,12 +12,12 @@
 class Buzzer
 {
 	// User-accessible "public" interface
-public:
-	int _duration;
-	int _hertz;
-	int _pin;
-	Buzzer(int);
-	void beep(int, int);
+  public:
+	  int _duration;
+		int _hertz;
+		int _pin;
+		Buzzer(int);
+		void beep(int, int);
 };
 
 #endif
