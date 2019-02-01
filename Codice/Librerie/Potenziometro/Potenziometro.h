@@ -12,9 +12,9 @@
 class Potenziometro
 {
 	// User-accessible "public" interface
-public:
-	Potenziometro(int);
-	int ottieniValorePotenziometro();
-	int _pin;
-	
+	public:
+		Potenziometro(int);
+		int ottieniValorePotenziometro();
+		int _pin;
+}
 #endif
